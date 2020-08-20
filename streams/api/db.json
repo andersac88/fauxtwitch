@@ -1,0 +1,24 @@
+{
+  "streams": [
+    {
+      "title": "my stream",
+      "description": "this is great",
+      "id": 1
+    },
+    {
+      "title": "Second Attempt",
+      "description": "Patience is a virtue I sorely lack",
+      "id": 2
+    },
+    {
+      "title": "Second Attempt",
+      "description": "Patience is a virtue I sorely lack",
+      "id": 3
+    },
+    {
+      "title": "Hi",
+      "description": "There",
+      "id": 4
+    }
+  ]
+}
