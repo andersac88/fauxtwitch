@@ -28,7 +28,6 @@ export const createStream = (formValues) => async (dispatch, getState) => {
 	const response = await streams.post('/streams', { ...formValues, userId });
 	dispatch({ type: CREATE_STREAM, payload: response.data });
 	history.push('/');
-	//window.location.href = '/' also works
 };
 
 export const fetchStreams = () => async (dispatch) => {
@@ -42,8 +41,9 @@ export const fetchStream = (id) => async (dispatch) => {
 };
 
 export const editStream = (id, update) => async (dispatch) => {
-	const response = await streams.put(`/streams/${id}`, update);
+	const response = await streams.patch(`/streams/${id}`, update);
 	dispatch({ type: EDIT_STREAM, payload: response.data });
+	history.push('/')
 };
 
 export const deleteStream = (id) => async (dispatch) => {
